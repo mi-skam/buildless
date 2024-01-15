@@ -2,5 +2,12 @@
 <html>
   <body>
     Hello world!
+    <script type="module">
+      import { html, render } from "lit-html";
+      import { message } from "./src/message.js";
+
+      console.log(message);
+      render(html`<p>Hello lit-html</p>`, document.body);
+    </script>
   </body>
 </html>
