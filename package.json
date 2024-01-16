@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "web-dev-server"
+    "dev": "web-dev-server",
+    "updateIndex": "jspm link src/index.js -o index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@web/dev-server": "^0.4.1"
-  },
-  "dependencies": {
-    "lit-html": "^3.1.1"
+    "@web/dev-server": "^0.4.1",
+    "@web/dev-server-import-maps": "^0.2.0"
   }
 }
