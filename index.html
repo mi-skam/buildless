@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script
+      async
+      src="https://ga.jspm.io/npm:es-module-shims@1.8.2/dist/es-module-shims.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "lit": "https://ga.jspm.io/npm:lit@3.1.1/index.js"
+        },
+        "scopes": {
+          "https://ga.jspm.io/": {
+            "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@2.0.3/development/reactive-element.js",
+            "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@4.0.3/development/lit-element.js",
+            "lit-html": "https://ga.jspm.io/npm:lit-html@3.1.1/development/lit-html.js",
+            "lit-html/is-server.js": "https://ga.jspm.io/npm:lit-html@3.1.1/development/is-server.js"
+          }
+        }
+      }
+    </script>
+    <script src="/components/index.js" type="module"></script>
     <link href="/styles/index.css" rel="stylesheet" />
     <title>Hello World</title>
   </head>
@@ -8,5 +29,6 @@
     <h1>Hello Buildless World!</h1>
 
     <p>The future is now.</p>
+    <example-component>🎉</example-component>
   </body>
 </html>
